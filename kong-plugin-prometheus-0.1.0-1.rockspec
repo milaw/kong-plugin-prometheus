@@ -20,7 +20,10 @@ local pluginName = "prometheus"  -- TODO: rename. This is the name to set in the
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins."..pluginName..".handler"] = "kong/plugins/"..pluginName.."/handler.lua",
-    ["kong.plugins."..pluginName..".schema"] = "kong/plugins/"..pluginName.."/schema.lua",
+    ["kong.plugins."..pluginName..".handler"] = "handler.lua",
+    ["kong.plugins."..pluginName..".schema"] = "schema.lua",
+    ["kong.plugins."..pluginName..".api"] = "api.lua",
+    ["kong.plugins."..pluginName..".logger"] = "logger.lua",
+    ["kong.plugins."..pluginName..".prometheus"] = "prometheus.lua",
   }
 }
