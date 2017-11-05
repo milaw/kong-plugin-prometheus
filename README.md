@@ -1,4 +1,3 @@
 # kong-plugin-prometheus
 Prometheus plugin for Kong API
-Import from https://github.com/yciabaud/kong-plugin-prometheus
-For testing 
+Import from https://github.com/yciabaud/kong-plugin-prometheus (for testing) 
