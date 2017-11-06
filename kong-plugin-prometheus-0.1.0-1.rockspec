@@ -1,8 +1,8 @@
 package = "kong-plugin-prometheus"
 version = "0.1.0-1"
+
 supported_platforms = {"linux", "macosx"}
 source = {
-  -- these are initially not required to make it work
   url = "git://github.com/milaw/kong-plugin-prometheus",
   tag = "0.1.0"
 }
@@ -16,7 +16,7 @@ description = {
 dependencies = {
 }
 
-local pluginName = "prometheus"  -- TODO: rename. This is the name to set in the Kong configuration `custom_plugins` setting.
+local pluginName = "prometheus" 
 build = {
   type = "builtin",
   modules = {
