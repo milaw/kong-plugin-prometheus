@@ -20,10 +20,10 @@ local pluginName = "prometheus"
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins."..pluginName..".handler"] = "handler.lua",
-    ["kong.plugins."..pluginName..".schema"] = "schema.lua",
-    ["kong.plugins."..pluginName..".api"] = "api.lua",
-    ["kong.plugins."..pluginName..".logger"] = "logger.lua",
-    ["kong.plugins."..pluginName..".prometheus"] = "prometheus.lua",
+    ["kong.plugins."..pluginName..".handler"] = "/usr/local/share/lua/5.1/kong/plugins/prometheus/handler.lua",
+    ["kong.plugins."..pluginName..".schema"] = "/usr/local/share/lua/5.1/kong/plugins/prometheus/schema.lua",
+    ["kong.plugins."..pluginName..".api"] = "/usr/local/share/lua/5.1/kong/plugins/prometheus/api.lua",
+    ["kong.plugins."..pluginName..".logger"] = "/usr/local/share/lua/5.1/kong/plugins/prometheus/logger.lua",
+    ["kong.plugins."..pluginName..".prometheus"] = "/usr/local/share/lua/5.1/kong/plugins/prometheus/prometheus.lua",
   }
 }
